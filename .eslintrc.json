@@ -4,27 +4,33 @@
         "es2021": true
     },
     "settings": {
-        "react":{
-            "version":"detect"
-        }
+      "react": {
+        "version": "detect"
+      }
     },
     "extends": [
+        "eslint:recommended",
         "plugin:react/recommended",
-        "standard-with-typescript",
-        "pulgin:react-hooks/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended"
     ],
-    "overrides": [
-    ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": "latest",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off"
+      "react/prop-types": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react/react-in-jsx-scope": "off"
     }
 }
