@@ -1,6 +1,5 @@
 export default function Posts() {
     return (
-    <h1>MY Posts</h1>
+    <h1>MY Postsddsdss</h1>
     )
   }
-  
